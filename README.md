@@ -1,10 +1,10 @@
-# Aira v1 7B - Custom Trained AI Model
+# AIRA-LLM - Custom Trained AI Model
 
 A custom-trained 7B parameter language model optimized for general-purpose AI tasks. This model has been fine-tuned using Ollama and is ready for deployment in various AI applications.
 
 ## Model Overview
 
-- **Model Name**: Aira v1 7B
+- **Model Name**: AIRA-LLM v1 7B
 - **Parameters**: 7 Billion
 - **Architecture**: Transformer-based
 - **Training Framework**: Ollama
@@ -34,18 +34,18 @@ A custom-trained 7B parameter language model optimized for general-purpose AI ta
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/yourusername/aira-v1-7b-model.git
-   cd aira-v1-7b-model
+   git clone https://github.com/yourusername/AIRA-LLM.git
+   cd AIRA-LLM
    ```
 
 2. **Build the model with Ollama**
    ```bash
-   ollama create aira-v1-7b -f Modelfile
+   ollama create aira-llm -f Modelfile
    ```
 
 3. **Run the model**
    ```bash
-   ollama run aira-v1-7b
+   ollama run aira-llm
    ```
 
 ## Usage
@@ -54,10 +54,10 @@ A custom-trained 7B parameter language model optimized for general-purpose AI ta
 
 ```bash
 # Start an interactive session
-ollama run aira-v1-7b
+ollama run aira-llm
 
 # Generate text
-echo "Write a short story about AI" | ollama run aira-v1-7b
+echo "Write a short story about AI" | ollama run aira-llm
 ```
 
 ### API Usage
@@ -68,7 +68,7 @@ ollama serve
 
 # Make API requests
 curl http://localhost:11434/api/generate -d '{
-  "model": "aira-v1-7b",
+  "model": "aira-llm",
   "prompt": "Explain quantum computing"
 }'
 ```
@@ -79,7 +79,7 @@ curl http://localhost:11434/api/generate -d '{
 import requests
 
 response = requests.post('http://localhost:11434/api/generate', json={
-    'model': 'aira-v1-7b',
+    'model': 'aira-llm',
     'prompt': 'What is machine learning?'
 })
 print(response.json()['response'])

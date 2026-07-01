@@ -1,6 +1,6 @@
-# Aira v1 7B Model Training & Deployment Flowchart
+# AIRA-LLM Model Training & Deployment Flowchart
 
-This document provides a visual guide on how the Aira v1 7B model was created and how to add it to Ollama.
+This document provides a visual guide on how the AIRA-LLM model was created and how to add it to Ollama.
 
 ## Model Creation Process
 
@@ -117,7 +117,7 @@ graph TD
 3. **Build Model with Ollama**
    ```bash
    # Create the model
-   ollama create aira-v1-7b -f Modelfile
+   ollama create aira-llm -f Modelfile
    
    # Verify installation
    ollama list
@@ -126,11 +126,11 @@ graph TD
 4. **Test Model**
    ```bash
    # Run the model
-   ollama run aira-v1-7b
+   ollama run aira-llm
    
    # Test with API
    curl http://localhost:11434/api/generate -d '{
-     "model": "aira-v1-7b",
+     "model": "aira-llm",
      "prompt": "Hello, how are you?"
    }'
    ```
@@ -154,7 +154,7 @@ graph TD
 ## File Structure
 
 ```
-aira-v1-7b-model/
+AIRA-LLM/
 ├── LICENSE
 ├── README.md
 ├── TRAINING_FLOWCHART.md
